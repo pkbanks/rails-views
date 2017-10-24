@@ -1,5 +1,9 @@
 <h1>Tom Hanks Movie App</h1>
 
-<% @movies.each do |movie| %>
-	<div><%= movie.name  %></div>
-<% end %>
+<%= render partial: 'movie', collection: @movies %>
+
+<hr>
+
+<h1>Tom Hanks, before 1995</h1>
+
+<%= render partial: 'movie', collection: @movies_older %>
