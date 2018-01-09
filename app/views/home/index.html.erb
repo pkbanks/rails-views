@@ -1,5 +1,7 @@
 <h1>Tom Hanks Movie App</h1>
 
+<%= image_tag 'toy_story', width: 200 %>
+
 <%= render partial: 'movie', collection: @movies %>
 
 <hr>
@@ -7,3 +9,4 @@
 <h1>Tom Hanks, before 1995</h1>
 
 <%= render partial: 'movie', collection: @movies_older %>
+
